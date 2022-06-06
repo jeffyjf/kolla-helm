@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   cinder:
   - apiVersion: v2
-    created: "2022-06-06T02:02:06.658155185Z"
+    created: "2022-06-06T02:09:33.723243793Z"
     dependencies:
     - name: common
       repository: https://kungze.github.io/kolla-helm
       version: 1.x.x
     description: Openstack cinder service
-    digest: afdde7e269434b9b8db46a24d6f9df1ea6963018885636235582d44a0b415aea
+    digest: 0f3bc5ddcf083f7f8caf57da9f01e0d9197080191e11594a8e6aeb7a915b7f15
     home: https://github.com/kungze/kolla-helm
     maintainers:
     - name: Kungze
@@ -18,13 +18,13 @@ entries:
     version: 1.0.1
   keystone:
   - apiVersion: v2
-    created: "2022-06-06T02:02:06.87549201Z"
+    created: "2022-06-06T02:09:33.881899174Z"
     dependencies:
     - name: common
       repository: https://kungze.github.io/kolla-helm
       version: 1.x.x
     description: Openstack keystone service
-    digest: 03159f95e5ddee2279d8691d1db0cd3f22463c581eba0c8997f4ff6d8961cd48
+    digest: d9ce6cb7807a38d6e62876fa83cdfb877757c55b862afe2e09f0363d7162650d
     home: https://github.com/kungze/kolla-helm
     maintainers:
     - name: Kungze
@@ -32,4 +32,4 @@ entries:
     urls:
     - https://github.com/jeffyjf/kolla-helm/releases/download/keystone-1.0.2/keystone-1.0.2.tgz
     version: 1.0.2
-generated: "2022-06-06T02:02:06.87549811Z"
+generated: "2022-06-06T02:09:33.881906174Z"
