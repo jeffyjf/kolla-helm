@@ -2,155 +2,34 @@ apiVersion: v1
 entries:
   cinder:
   - apiVersion: v2
-    created: "2022-05-30T02:44:16.314705486Z"
+    created: "2022-06-06T02:02:06.658155185Z"
     dependencies:
     - name: common
       repository: https://kungze.github.io/kolla-helm
       version: 1.x.x
     description: Openstack cinder service
-    digest: 09eabebd74fec09ee8e71f285d9f01166d82ad249d9f887a9dbd75b0da7663ee
+    digest: afdde7e269434b9b8db46a24d6f9df1ea6963018885636235582d44a0b415aea
     home: https://github.com/kungze/kolla-helm
     maintainers:
     - name: Kungze
     name: cinder
     urls:
-    - https://github.com/kungze/kolla-helm/releases/download/cinder-1.0.0/cinder-1.0.0.tgz
-    version: 1.0.0
-  common:
-  - apiVersion: v2
-    created: "2022-05-27T05:42:51.185653855Z"
-    description: Openstack kolla helm common library
-    digest: 4e2a49a2705781c1e9d7279959cfd1a00b900316e883749810b877264447820e
-    home: https://github.com/kungze/kolla-helm
-    maintainers:
-    - name: Kungze
-    name: common
-    type: library
-    urls:
-    - https://github.com/kungze/kolla-helm/releases/download/common-1.0.2/common-1.0.2.tgz
-    version: 1.0.2
-  - apiVersion: v2
-    created: "2022-04-28T10:12:56.856740018Z"
-    description: Openstack kolla helm common library
-    digest: 695ce8b7ead46633e37d3519c3dd0def5dfe31f44901318bf64d6751075f890f
-    home: https://github.com/kungze/kolla-helm
-    maintainers:
-    - name: Kungze
-    name: common
-    type: library
-    urls:
-    - https://github.com/kungze/kolla-helm/releases/download/common-1.0.1/common-1.0.1.tgz
+    - https://github.com/jeffyjf/kolla-helm/releases/download/cinder-1.0.1/cinder-1.0.1.tgz
     version: 1.0.1
-  - apiVersion: v2
-    created: "2022-04-26T00:34:29.638901525Z"
-    description: Openstack kolla helm common library
-    digest: 6cd56daf44dc466caba2130a56e67dec423e9bb0317f927cab506b6919ecda6b
-    home: https://github.com/kungze/kolla-helm
-    maintainers:
-    - name: Kungze
-    name: common
-    type: library
-    urls:
-    - https://github.com/kungze/kolla-helm/releases/download/common-1.0.0/common-1.0.0.tgz
-    version: 1.0.0
   keystone:
   - apiVersion: v2
-    created: "2022-05-27T07:18:08.79792941Z"
+    created: "2022-06-06T02:02:06.87549201Z"
     dependencies:
     - name: common
       repository: https://kungze.github.io/kolla-helm
       version: 1.x.x
     description: Openstack keystone service
-    digest: ac8c6feb8323e0f070c08eb710875c056d1bc7342d7a3a8174cd94e37b3a5b74
+    digest: 03159f95e5ddee2279d8691d1db0cd3f22463c581eba0c8997f4ff6d8961cd48
     home: https://github.com/kungze/kolla-helm
     maintainers:
     - name: Kungze
     name: keystone
     urls:
-    - https://github.com/kungze/kolla-helm/releases/download/keystone-1.0.1/keystone-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v2
-    created: "2022-04-28T10:12:57.038882043Z"
-    dependencies:
-    - name: common
-      repository: https://kungze.github.io/kolla-helm
-      version: 1.x.x
-    description: Openstack keystone service
-    digest: 119699624e4b90e121dbdccd98edf156f52912fa898a46318f08810e3e0026c6
-    home: https://github.com/kungze/kolla-helm
-    maintainers:
-    - name: Kungze
-    name: keystone
-    urls:
-    - https://github.com/kungze/kolla-helm/releases/download/keystone-1.0.0/keystone-1.0.0.tgz
-    version: 1.0.0
-  openstack-dep:
-  - apiVersion: v2
-    created: "2022-04-28T08:09:55.384619047Z"
-    dependencies:
-    - condition: mariadb.enabled
-      name: mariadb
-      repository: https://charts.bitnami.com/bitnami
-      version: 10.x.x
-    - condition: rabbitmq.enabled
-      name: rabbitmq
-      repository: https://charts.bitnami.com/bitnami
-      version: 8.x.x
-    - condition: memcached.enabled
-      name: memcached
-      repository: https://charts.bitnami.com/bitnami
-      version: 6.x.x
-    - condition: nginx-ingress-controller.enabled
-      name: nginx-ingress-controller
-      repository: https://charts.bitnami.com/bitnami
-      version: 9.x.x
-    description: Install openstack dependency service
-    digest: 24124856afa43ed27aa21ef5184b3a3abc0eae5a95299b786ba44b2ba0d787f6
-    home: https://github.com/kungze/kolla-helm
-    maintainers:
-    - name: Kungze
-    name: openstack-dep
-    urls:
-    - https://github.com/kungze/kolla-helm/releases/download/openstack-dep-1.0.1/openstack-dep-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v2
-    created: "2022-04-25T08:49:37.068523028Z"
-    dependencies:
-    - condition: mariadb.enabled
-      name: mariadb
-      repository: https://charts.bitnami.com/bitnami
-      version: 10.x.x
-    - condition: rabbitmq.enabled
-      name: rabbitmq
-      repository: https://charts.bitnami.com/bitnami
-      version: 8.x.x
-    - condition: memcached.enabled
-      name: memcached
-      repository: https://charts.bitnami.com/bitnami
-      version: 6.x.x
-    - condition: nginx-ingress-controller.enabled
-      name: nginx-ingress-controller
-      repository: https://charts.bitnami.com/bitnami
-      version: 9.x.x
-    description: Install openstack dependency service
-    digest: e60b50a862232491c273280ee06ab38e1c8f850c4ed99a7b07d36cc5afb56ead
-    home: https://github.com/kungze/kolla-helm
-    maintainers:
-    - name: Kungze
-    name: openstack-dep
-    urls:
-    - https://github.com/kungze/kolla-helm/releases/download/openstack-dep-1.0.0/openstack-dep-1.0.0.tgz
-    version: 1.0.0
-  password:
-  - apiVersion: v2
-    created: "2022-04-25T08:49:37.25335922Z"
-    description: Automatically generate random password for openstack relate projects
-    digest: 8a91e9b8880a2e9a7e487b75d1212f2eff80cca0ebfa342d4191d0d1f8116cdd
-    home: https://github.com/kungze/kolla-helm
-    maintainers:
-    - name: Kungze
-    name: password
-    urls:
-    - https://github.com/kungze/kolla-helm/releases/download/password-1.0.0/password-1.0.0.tgz
-    version: 1.0.0
-generated: "2022-05-30T02:44:16.314721786Z"
+    - https://github.com/jeffyjf/kolla-helm/releases/download/keystone-1.0.2/keystone-1.0.2.tgz
+    version: 1.0.2
+generated: "2022-06-06T02:02:06.87549811Z"
